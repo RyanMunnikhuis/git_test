@@ -9,9 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(palmerpenguins)
+library(burritomantisshrimp)
 ```
 
 ```{r}
-ggplot(penguins, aes(x = species, y = body_mass_g)) + geom_violin(aes(fill = species))
+ggplot(penguins, aes(x = species, y = body_mass_g)) + 
+  
+  geom_violin(aes(fill = species)) + 
+  
+  Ugly_theme()
 ```
 
