@@ -17,6 +17,8 @@ ggplot(penguins, aes(x = species, y = body_mass_g)) +
   
   geom_violin(aes(fill = species)) + 
   
-  Ugly_theme()
+  Ugly_theme() + labs(title = "SUPER COOL",
+                      x = "WOW", 
+                      y = "HURRAY")
 ```
 
